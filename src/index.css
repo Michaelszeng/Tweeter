@@ -1,13 +1,48 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 24px;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.tweet-box {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 60px);
+}
+
+input, 
+textarea {
+  font-family: inherit;
+  flex: 1;
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.tweet-box-actions {
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.tweet-box-submit {
+  font-family: inherit;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: navy;
+}
+
+.tweet-box-submit:hover {
+  opacity: 0.8;
+}
+
+.tweet-box-submit:disabled {
+  background-color: darkgray;
 }
